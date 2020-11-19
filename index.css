@@ -1,0 +1,16 @@
+.bd{
+    margin-left: 1.5vw;
+}
+
+table{
+    width: 100%;
+    border: 1px solid black;
+}
+
+form{
+    margin: 15px;
+}
+
+.form-row{
+    width: 80%;
+}
