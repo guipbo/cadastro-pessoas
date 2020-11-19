@@ -4,7 +4,11 @@
 
 table{
     width: 80%;
+}
+
+table, td, th {
     border: 1px solid black;
+    text-align: center;
 }
 
 form{
@@ -13,4 +17,9 @@ form{
 
 .form-row{
     width: 80%;
+}
+
+.erros{
+    font-style: oblique;
+    color: red;
 }

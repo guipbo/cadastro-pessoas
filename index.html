@@ -16,25 +16,29 @@
     
             <div class="form-row">
                 <div class="col">
-                    <label>Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." required class="form-control">
+                    <label>* Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." class="form-control">
+                    <p class="erros" id="erroNome"></p>
                 </div>
     
                 <div class="col">
-                    <label>Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome..." required class="form-control">
+                    <label>* Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome..." class="form-control">
+                    <p class="erros" id="erroSobrenome"></p>
                 </div>
             </div>
             
             <div class="form-row">
                 <div class="col">
-                    <label for="">CPF</label>
-                    <input type="text" name="cpf" id="cpf" required class="form-control">
+                    <label for="">* CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="___.___.___-__" class="form-control">
+                    <p class="erros" id="erroCpf"></p>
                 </div>
     
                 <div class="col">
                     <label for="">Data de Nascimento</label>
                     <input type="date" name="nascimento" id="nascimento" class="form-control">
+                    <p class="erros" id="erroNascimento"></p>
                 </div>
             </div>
 
@@ -46,35 +50,41 @@
             <div class="form-row">
                 <div class="col">
                     <label for="">CEP</label>
-                    <input type="text" name="cep" id="cep" class="form-control">
+                    <input type="text" name="cep" id="cep" placeholder="_____-___" class="form-control">
+                    <p class="erros" id="erroCep"></p>
                 </div>
 
                 <div class="col">
-                    <label for="">Rua</label>
-                    <input type="text" name="rua" id="rua" required class="form-control">
+                    <label for="">* Rua</label>
+                    <input type="text" name="rua" id="rua" class="form-control">
+                    <p class="erros" id="erroRua"></p>
                 </div>
 
                 <div class="col">
                     <label for="">Número</label>
                     <input type="number" name="numero" id="numero" class="form-control">
+                    <p class="erros" id="erroNumero"></p>
                 </div>
             </div>
             
             <div class="form-row">
     
                 <div class="col">
-                    <label for="">Bairro</label>
-                    <input type="text" name="bairro" id="bairro" required class="form-control">
+                    <label for="">* Bairro</label>
+                    <input type="text" name="bairro" id="bairro" class="form-control">
+                    <p class="erros" id="erroBairro"></p>
                 </div>
     
                 <div class="col">
-                    <label for="">Cidade</label>
-                    <input type="text" name="cidade" id="cidade" required class="form-control">
+                    <label for="">* Cidade</label>
+                    <input type="text" name="cidade" id="cidade" class="form-control">
+                    <p class="erros" id="erroCidade"></p>
                 </div>
     
                 <div class="col">
-                    <label for="">Estado</label>
-                    <input type="text" name="estado" id="estado" required class="form-control">
+                    <label for="">* Estado</label>
+                    <input type="text" name="estado" id="estado" class="form-control">
+                    <p class="erros" id="erroEstado"></p>
                 </div>
             </div>
         </div>
@@ -83,6 +93,7 @@
         <button type="submit" class="btn btn-primary btn-lg" id="enviar">Enviar</button>
     </form>
 
+    <h1>Pessoas cadastradas</h1>
     <table id="tabela">
         <thead>
             <tr>
@@ -99,10 +110,10 @@
                 <th>Estado</th>
             </tr>
         </thead>
-        <tbody id="itens">
-
-        </tbody>
+        <tbody id="itens"></tbody>
     </table>
+
+
     <script src="index.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
